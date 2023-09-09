@@ -36,6 +36,7 @@ body {
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 0 1.25rem 2.5rem 0.625rem var(--dark-blue-alpha);
+  text-align: center;
 }
 
 .card::before {
@@ -60,13 +61,9 @@ body {
   border: 0.313rem solid var(--white);
 }
 
-.profile {
-  text-align: center;
-  margin-top: 4.5rem;
-}
-
 .name {
   display: inline-block;
+  margin-top: 4.5rem;
   font-size: inherit;
 }
 
@@ -94,7 +91,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 1.5rem;
-  text-align: center;
   list-style-type: none;
 }
 
