@@ -23,13 +23,16 @@ body {
   font-size: 1.125rem;
   color: var(--dark-blue);
   background-color: var(--dark-cyan);
-  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-image: 
+    url("images/bg-pattern-top.svg"), 
+    url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
-  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+  background-position: 
+    right 50vw bottom 40vh, 
+    left 50vw top 50vh;
 }
 
 .card {
-  position: relative;
   width: min(100vw - 3rem, 21.875rem);
   margin: 1.5rem 0;
   overflow: hidden;
@@ -39,31 +42,24 @@ body {
   text-align: center;
 }
 
-.card::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 8.75rem;
-  background: url("images/bg-pattern-card.svg") no-repeat center;
+.card-img {
+  position: relative;  
 }
 
 .avatar {
   position: absolute;
-  width: 6.625rem;
-  height: 6.625rem;
-  top: 5.5rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  bottom: 0.313rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
   border-radius: 50%;
-  background-color: var(--white);
-  background: url("images/image-victor.jpg") no-repeat center;
-  border: 0.313rem solid var(--white);
+  outline: 0.313rem solid var(--white);
 }
 
 .name {
   display: inline-block;
-  margin-top: 4.5rem;
+  margin-top: 4.2rem;
   font-size: inherit;
 }
 
@@ -74,14 +70,13 @@ body {
 }
 
 .location {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
   font-size: 0.9rem;
   color: var(--dark-gray);
 }
 
 .divider {
   margin-top: 1.5rem;
-  width: 100%;
   height: 0.063rem;
   background-color: var(--dark-gray);
   opacity: 25%;
