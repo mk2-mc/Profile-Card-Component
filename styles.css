@@ -15,10 +15,10 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.125rem;
   color: var(--dark-blue);
